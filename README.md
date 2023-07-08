@@ -21,5 +21,6 @@ Transfer the image within the images folder to qb-inventory\html\images and plac
 
 Add aditional config options to your desire
 
+Transfer 'sqrl-quickcash' into your resources folder and put it inside of a directory or by itself and inside the server.cfg add 'ensure sqrl-quickcash'
 
 Join in game and begin doing illeal runs for Oswald
