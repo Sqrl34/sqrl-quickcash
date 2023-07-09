@@ -63,11 +63,3 @@ RegisterNetEvent('quickcash:server:secureRemove', function(item, amount)
     end
     Player.Functions.RemoveItem(item, amount)
 end)
-
-AddEventHandler('playerDropped', function()
-    local src = source
-    local Player = QBCore.Functions.GetPlayer(src)
-
-    TriggerEvent('quickcash:server:fill', function()
-    end)
-end)
