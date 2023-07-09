@@ -45,9 +45,7 @@ local function createTargetPed()
 end
 
 local function createUsefulBlip(sprite, color, name, location)
-    print(currentBlip)
     currentBlip = nil
-    print(currentBlip)
     currentBlip = AddBlipForCoord(location.x, location.y, location.z)
     SetBlipColour(currentBlip, color)
     SetBlipScale(currentBlip, .6)
@@ -206,16 +204,11 @@ end)
 
 RegisterNetEvent('quickcash:client:serverTrigger', function(data)
     TriggerServerEvent('quickcash:server:remove', data)
-    print("event")
     itemsGiven = false
-    print("given false")
     RemoveBlip(currentBlip)
     currentBlip = nil
-    print("remove blip")
     drugZone:destroy()
-    print("zone destroy")
     cooldown()
-    print("cooldown")
 end)
 -- Startup
 local x = false
