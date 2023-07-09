@@ -67,12 +67,12 @@ local function sendMail(send, subjects, messages)
     })
 end
 
-local function fillInventory(item, amount)
-    TriggerServerEvent('quickcash:server:fill', item, amount)
+local function fillInventory(index)
+    TriggerServerEvent('quickcash:server:fill', index)
     itemsGiven = true
 end
 
-local function doModel(newmodel, location, message, item, amount)
+local function doModel(newmodel, location, message, index)
     local model = newmodel
     RequestModel(model)
     while not HasModelLoaded(model) do
@@ -88,7 +88,7 @@ local function doModel(newmodel, location, message, item, amount)
                 action = function()
                     sendMail('Oswald', 'Drop Location', message)
                     DeleteObject(currentObject)
-                    fillInventory(item, amount)
+                    fillInventory(index)
                     RemoveBlip(currentBlip)
                     pickup = true
                 end
@@ -108,7 +108,7 @@ local function chooseIllegal()
         Config.Locations[place].Blip.name, Config.Locations[place].Blip.coords)
     sendMail("Osawald", "Shipment", Config.Locations[place].Messages.Pickup)
     doModel(Config.Locations[place].Prop.model, Config.Locations[place].Prop.coords,
-        Config.Locations[place].Messages.Drop, Config.Locations[place].Item, Config.Locations[place].Amount)
+        Config.Locations[place].Messages.Drop, indx)
 end
 
 local function menuDeliver()
