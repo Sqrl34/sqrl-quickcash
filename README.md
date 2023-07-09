@@ -25,9 +25,9 @@ Transfer 'sqrl-quickcash' into your resources folder and put it inside of a dire
 
 Add these items to your items.lua
 
-*['cokebaggy2']                      = {['name'] = 'cokebaggy2',                        ['label'] = 'Coke Bag',               ['weight'] = 0,            ['type'] = 'item',         ['image'] = 'cocaine_baggy.png',           ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,       ['combinable'] = nil,   ['description'] = 'Belonging to Oswald'},
+* ['cokebaggy2']                      = {['name'] = 'cokebaggy2',                        ['label'] = 'Coke Bag',               ['weight'] = 0,            ['type'] = 'item',         ['image'] = 'cocaine_baggy.png',           ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,       ['combinable'] = nil,   ['description'] = 'Belonging to Oswald'},
 
-*['weed_brick2']                     = {['name'] = 'weed_brick2',                       ['label'] = 'Weed Brick',             ['weight'] = 0,            ['type'] = 'item',         ['image'] = 'weed_brick.png',              ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,       ['combinable'] = nil,   ['description'] = 'Belonging to Oswald'},
+* ['weed_brick2']                     = {['name'] = 'weed_brick2',                       ['label'] = 'Weed Brick',             ['weight'] = 0,            ['type'] = 'item',         ['image'] = 'weed_brick.png',              ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,       ['combinable'] = nil,   ['description'] = 'Belonging to Oswald'},
 
-*['ammo_box']                        = {['name'] = 'ammo_box',                          ['label'] = 'Ammo Box',               ['weight'] = 0,            ['type'] = 'item',         ['image'] = 'ammo_box.png',                ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,       ['combinable'] = nil,   ['description'] = 'Belonging to Oswald'},
+* ['ammo_box']                        = {['name'] = 'ammo_box',                          ['label'] = 'Ammo Box',               ['weight'] = 0,            ['type'] = 'item',         ['image'] = 'ammo_box.png',                ['unique'] = false,         ['useable'] = false,     ['shouldClose'] = true,       ['combinable'] = nil,   ['description'] = 'Belonging to Oswald'},
 Join in game and begin doing illeal runs for Oswald
