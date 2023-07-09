@@ -3,7 +3,7 @@ Config = Config or {}
 Config.Cooldown = 1 -- In minutes
 
 Config.Blip = {
-    location = vector3(22,9,162),
+    location = vector3(1108.06, 58.72, 79.76),
     scale = .6,
     color = 15, -- See for refrence https://docs.fivem.net/docs/game-references/blips/
     sprite = 326, -- See for refrence https://docs.fivem.net/docs/game-references/blips/
