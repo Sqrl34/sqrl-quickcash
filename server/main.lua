@@ -22,16 +22,16 @@ local function reward(reward)
     end
 end
 
-RegisterNetEvent('quickcash:server:fill', function(item, amount)
+RegisterNetEvent('quickcash:server:fill', function(index)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local count = 0
 
-    while count < amount do
-        TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[item], "add")
+    while count < Config.Locations[index].Amount do
+        TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[Config.Locations[index].Item], "add")
         count = count + 1
     end
-    Player.Functions.AddItem(item, amount)
+    Player.Functions.AddItem(Config.Locations[index].Item, Config.Locations[index].Amount)
 end)
 
 RegisterNetEvent('quickcash:server:remove', function(data)
