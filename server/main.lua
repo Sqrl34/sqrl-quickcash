@@ -38,16 +38,12 @@ RegisterNetEvent('quickcash:server:remove', function(data)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     local count = 0
-    print(QBCore.Functions.HasItem(src, data.item, data.amount))
-    print(data.item)
-    print(data.amount)
     if QBCore.Functions.HasItem(src, data.item, data.amount) then
         while count < data.amount do
             TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[data.item], "remove")
             count = count + 1
         end
         Player.Functions.RemoveItem(data.item, data.amount)
-        print(data.reward.Item.item)
         if data.finished then
             reward(data.reward)
         end
